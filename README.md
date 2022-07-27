@@ -16,6 +16,9 @@ docker build --build-arg MSYS2_DOWNLOAD_URL=https://mirrors.tuna.tsinghua.edu.cn
 
 ## Build julia
 
+Use `cmd /C ver` to check your windows version and make sure it is `>= 20H2 (10.0.19042.1826)`.
+Or you need to build image that match your windows version.
+
 ```pwsh
 #  Run container
 docker run -it --cpus="8" --memory=16G  msys2-mingw-w64
