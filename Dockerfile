@@ -20,7 +20,7 @@ RUN bash -l -c "pacman -Syuu --noconfirm --noprogressbar"  && \
         "  && \
     bash -l -c "pacman -Scc --noconfirm"  && \
     echo ---- [%date% %time%] Pkg install done!
-# NOTE: if you hangup here >10 min. You may want to `zap` temp files.
+# NOTE: If you hang here >10 min. You may want to `zap` temp files.
 #   ref: https://github.com/msys2/MSYS2-packages/issues/2305#issuecomment-758162640
 
 
