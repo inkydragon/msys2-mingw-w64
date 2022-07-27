@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: Unlicense OR MIT
 
-# See "Full Tag Listing" in https://hub.docker.com/r/microsoft-windows-servercore
+# See "Full Tag Listing" in https://hub.docker.com/_/microsoft-windows-servercore
 ARG WIN_VERSION=20H2
 FROM mcr.microsoft.com/windows/servercore:$WIN_VERSION AS MSYS2_download
 

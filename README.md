@@ -6,6 +6,9 @@
 cd msys2-mingw-w64
 docker build -t msys2-mingw-w64  .
 
+# Or choose an another windows version:  https://hub.docker.com/_/microsoft-windows-servercore
+docker build --build-arg WIN_VERSION=ltsc2022 -t msys2-mingw-w64  .
+
 # Or use mirrors:  https://www.msys2.org/dev/mirrors/
 docker build --build-arg MSYS2_DOWNLOAD_URL=https://mirrors.tuna.tsinghua.edu.cn/msys2/distrib/x86_64/msys2-base-x86_64-20220603.sfx.exe  -t msys2-mingw-w64  .
 ```
