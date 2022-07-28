@@ -20,7 +20,9 @@ cd julia
 make O=julia-docker-mingw64  configure
 make -C julia-docker-mingw64 -j 8
 ```
-
+Note:
+- If you want to run test in docker, you may set a large memory limit.  
+    Maybe `5~6 GB / per CPU core`
 
 ## Build docker image
 
