@@ -20,8 +20,9 @@ Use `cmd /C ver` to check your windows version and make sure it is `>= 20H2 (10.
 Or you need to build image that match your windows version.
 
 ```pwsh
-#  Run container
-docker run -it --cpus="8" --memory=16G  msys2-mingw-w64
+#  Pull && Run container
+docker pull woclass/msys2-mingw-w64
+docker run -it --cpus="8" --memory=16G  woclass/msys2-mingw-w64
 
 #  Clone julia
 git clone https://github.com/JuliaLang/julia.git
